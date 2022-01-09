@@ -20,13 +20,13 @@
   
   
     <script>
-        var themeModelId = '';
+        var themeModelId = '1';
         if (themeModelId) {
             localStorage.setItem('modelId', themeModelId);
         }
     </script>
     
-    <script src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
+    <script src="/js/live2d/autoload.js"></script>
     <script>
         var live2dOpen = eval('true') || false;
         if (!live2dOpen) {
@@ -231,7 +231,7 @@
     <div class="drawer-box-head bg-color">
       <img class="drawer-box-head_logo lazyload placeholder" src="/medias/logo.jpg" class="lazyload placeholder" data-srcset="/medias/logo.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="logo">
       <h3 class="drawer-box-head_title">ljl&#39;s blog</h3>
-      <h5 class="drawer-box-head_desc">世上无难事，只怕有心人</h5>
+      <h5 class="drawer-box-head_desc">坚持你相信的事，相信你坚持的事</h5>
     </div>
     
     <div class="drawer-box-content">
@@ -299,59 +299,6 @@
                   
                   <span class="name">友情链接</span>
                 </a>
-              
-            </li>
-          
-            <li class="drawer-box-content_item" style="position: relative;">
-              
-                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(6)">
-                  <span>
-                    
-                      <i class="fas fa-link"></i>
-                    
-                    <span class="name">更多</span>
-                  </span>
-                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(6)}" aria-hidden="true"></i>
-                </a>
-                <ul class="drawer-sub-menu" v-if="isOpen(6)">
-                  
-                  <li>
-                    <a href="/gallery">
-                      
-                      <i class="fas fa-music" style="margin-top: -20px;"></i>
-                      
-                      <span>图库</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="/huoban">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>友情连接</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="/me">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>关于我</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
-                    </a>
-                  </li>
-                  
-                </ul>
               
             </li>
           
@@ -481,57 +428,6 @@
                   
                   <span class="name">友情链接</span>
                 </a>
-              
-            </li>
-          
-            <li class="menu-item" style="position: relative;">
-              
-                <a href="javascript:;" class="menu-item-link" title="更多">
-                  
-                    <i class="fas fa-link"></i>
-                  
-                  <span class="name">更多</span>
-                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
-                </a>
-                <ul class="sub-menu">
-                  
-                  <li>
-                    <a href="/gallery">
-                      
-                      <i class="fas fa-music" style="margin-top: -20px;"></i>
-                      
-                      <span>图库</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="/huoban">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>友情连接</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="/me">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>关于我</span>
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
-                      
-                      <i class="fas fa-film" style="margin-top: -20px;"></i>
-                      
-                      <span>百度</span>
-                    </a>
-                  </li>
-                  
-                </ul>
               
             </li>
           
@@ -690,9 +586,9 @@
             <div class="category-chips">
                 
                 
-                <a href="/categories/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="第一篇博客: 1">
+                <a href="/categories/first/" title="first: 1">
                     <span class="category-content"
-                        title="第一篇博客" style="background-color: #F8F9F9;">第一篇博客
+                        title="first" style="background-color: #F9E79F;">first
                         <span class="category-length">1</span>
                     </span>
                 </a>

@@ -5,22 +5,22 @@
     
     <entry>
       <title>first</title>
-      <link href="/2022/01/08/hello%20world/"/>
-      <url>/2022/01/08/hello%20world/</url>
+      <link href="/2022/01/08/world/"/>
+      <url>/2022/01/08/world/</url>
       
         <content type="html"><![CDATA[<p>我的第一篇博客</p><span id="more"></span><p>陌生人你好！这是我的第一篇博客，感谢你的阅读！</p>]]></content>
       
       
       <categories>
           
-          <category> 第一篇博客 </category>
+          <category> first </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 第一篇博客 </tag>
+            <tag> first </tag>
             
         </tags>
       
