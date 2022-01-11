@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>友情链接 | ljl&#39;s blog</title>
+  <title>notes | ljl&#39;s blog</title>
 
   <link rel="icon" type="image/jpeg" href="/favicon.jpg">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -282,20 +282,57 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/about" class="drawer-menu-item-link">
+                <a href="/notes" class="drawer-menu-item-link">
                   
-                    <i class="fas fa-user" aria-hidden="true"></i>
+                    <i class="far fa-clipboard" aria-hidden="true"></i>
                   
-                  <span class="name">关于</span>
+                  <span class="name">随记</span>
                 </a>
               
             </li>
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/friends" class="drawer-menu-item-link">
+                <a href="/gallery" class="drawer-menu-item-link">
                   
-                  <span class="name">友情链接</span>
+                    <i class="far fa-image" aria-hidden="true"></i>
+                  
+                  <span class="name">图库</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(6)">
+                  <span>
+                    
+                      <i class="fas fa-tools"></i>
+                    
+                    <span class="name">瞎折腾</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(6)}" aria-hidden="true"></i>
+                </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(6)">
+                  
+                  <li>
+                    <a href="/toss">
+                      
+                      <span>代码雨</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/about" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                  
+                  <span class="name">关于</span>
                 </a>
               
             </li>
@@ -411,20 +448,55 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/about" class="menu-item-link" title="关于">
+                <a href="/notes" class="menu-item-link" title="随记">
                   
-                    <i class="fas fa-user" aria-hidden="true"></i>
+                    <i class="far fa-clipboard" aria-hidden="true"></i>
                   
-                  <span class="name">关于</span>
+                  <span class="name">随记</span>
                 </a>
               
             </li>
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/friends" class="menu-item-link" title="友情链接">
+                <a href="/gallery" class="menu-item-link" title="图库">
                   
-                  <span class="name">友情链接</span>
+                    <i class="far fa-image" aria-hidden="true"></i>
+                  
+                  <span class="name">图库</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="javascript:;" class="menu-item-link" title="瞎折腾">
+                  
+                    <i class="fas fa-tools"></i>
+                  
+                  <span class="name">瞎折腾</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/toss">
+                      
+                      <span>代码雨</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/about" class="menu-item-link" title="关于">
+                  
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                  
+                  <span class="name">关于</span>
                 </a>
               
             </li>
@@ -555,21 +627,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('/medias/11.jpg')">
+  background-position: center center;position: relative;background-image:url('/medias/14.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        friends
+        notes
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> 发表于：2022-01-06 |
+          <i class="fas fa-calendar"></i> 发表于：2022-01-11 |
         </span>
       
 
@@ -622,7 +694,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/friends/index.html" target="_blank" title="friends">https://luckyljl.github.io/friends/index.html</a>
+    <a href="/notes/index.html" target="_blank" title="notes">https://luckyljl.github.io/notes/index.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
