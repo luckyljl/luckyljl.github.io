@@ -61,12 +61,6 @@
 
     <!-- import link -->
     
-        
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-        
-            
-        
-    
     <!-- import script -->
     
         
@@ -92,10 +86,13 @@
   <body>
   
   
-	<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script> -->
 	<!-- 上面是背景添加动态线条 -->
 	
-	
+    
+          <script type="text/javascript" color="0.0.0" opacity='0.4' zIndex="-1" count="60" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+    	
+	<!-- 加载动态线条 -->
     <!-- 预加载动画 -->
     <!-- 页面预加载动画 -->
 
@@ -906,7 +903,7 @@
 			clearInterval(this.time);
 		},
 		mounted() {
-			let prop = '' || '';
+			let prop = '' || 'rgba(199,155,251,0.3)';
 			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
 			if (isImg) {
 				let img = prop.split(',');
@@ -1020,12 +1017,6 @@
     <!-- 渲染暗黑按钮 -->
     
     <!-- 渲染回到顶部按钮 -->
-    
-      <div class="goTop top-btn-color" pointer>
-  <i class="fas fa-arrow-up" aria-hidden="true"></i>
-</div>
-<script src="/js/goTop.js"></script>
-
     
     <!-- 渲染左下角音乐播放器 -->
     

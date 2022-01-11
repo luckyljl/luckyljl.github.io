@@ -1782,7 +1782,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #42b983;
 }
 .bg-light-floor-tags {
-  background: ;
+  background: rgba(199,155,251,0.3);
   background-size: cover;
   background-position: center center;
 }
@@ -1930,7 +1930,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #42b983;
 }
 .bg-light-floor-categories {
-  background: ;
+  background: rgba(199,155,251,0.3);
   background-size: cover;
   background-position: center center;
 }
@@ -2519,7 +2519,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   word-break: break-all;
 }
 .bg-light-floor-archive {
-  background: ;
+  background: rgba(199,155,251,0.3);
   background-size: cover;
   background-position: center center;
 }
@@ -2739,7 +2739,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   line-height: 18px;
 }
 .bg-light-floor-tagDetail {
-  background: ;
+  background: rgba(199,155,251,0.3);
   background-size: cover;
   background-position: center center;
 }
@@ -2862,7 +2862,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   border-radius: 10px;
 }
 .bg-light-floor-categoryDetail {
-  background: ;
+  background: rgba(199,155,251,0.3);
   background-size: cover;
   background-position: center center;
 }
@@ -2985,7 +2985,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   border-radius: 10px;
 }
 .bg-light-floor-friends {
-  background: ;
+  background: rgba(199,155,251,0.3);
   background-size: cover;
   background-position: center center;
 }
@@ -3148,7 +3148,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   }
 }
 .bg-light-floor-about {
-  background: ;
+  background: rgba(199,155,251,0.3);
   background-size: cover;
   background-position: center center;
 }
@@ -3262,7 +3262,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   font-size: 1.4em;
 }
 #about .basic-info {
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.4);
   padding: 20px;
   border-radius: 10px;
   margin: 20px 10px;
