@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Matrix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        //获取画布
+        const canvas = document.getElementById('canvas');
+        //创建绘制环境
+        const ctx = canvas.getContext('2d');
+        //画布宽高
+        canvas.width = window.screen.width;
+        canvas.height = window.screen.height;
+        //背景颜色
+        canvas.style.background = 'black';
+        const fontsize = 26;
+        ctx.fillStyle = 'green';
+        ctx.font = `${fontsize}px Arial`;
+
+        const texts = 'Wake up,Neko...:The Matrix has you...:Follow the White Rabbit:Knock,Knock,Neko...';
+        const textArray = texts.split(':');
+        const charArray = Array(Math.floor(canvas.width / fontsize)).fill(0);
+        
+
+        function type(text, i) {//打字效果
+            if (i > text.length) {//打完退出
+                return;
+            }
+            setTimeout(() => {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                let char = text.slice(0, i);
+                ctx.fillText(char, 10, 50);
+                i++;
+                type(text, i);//递归调用
+            }, 200)
+        }
+
+
+
+        function start() {
+            type(textArray[0], 1);
+            setTimeout(() => {
+                type(textArray[1], 1);
+            }, 3500)
+            setTimeout(() => {
+                type(textArray[2], 1);
+            }, 8000)
+            setTimeout(() => {
+                type(textArray[3], 1);
+            }, 16500)
+            setTimeout(() => {
+                digitalRain();
+            }, 25000)
+        }
+
+        start();//执行代码
+
+        function r(min, max) {//获取min-max区间内的值
+            return ~~(Math.random() * (max - min + 1) + min);
+        }
+
+        function pick() {//获取数组内随机值
+            return arguments[r(0, arguments.length - 1)];
+        }
+
+        function getChar() {//随机获得一个字符
+            return String.fromCharCode(pick(
+                r(0x109A0, 0x109FF),
+                r(0x103A0, 0x103DF),
+                r(0xA720, 0xA7FF)
+            ))
+        }
+
+        function digitalRain() {//数字雨
+            setInterval(() => {
+                canvas.style.background = 'rgba(0,0,0,0.1)';
+                ctx.fillStyle = 'rgba(0,0,0,0.1)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                charArray.map((v, i) => {
+                    ctx.fillStyle = `hsl(136,100%,${r(50, 78)}%)`;//改变文字的亮度
+                    ctx.fillText(getChar(), i * fontsize, v);
+                    charArray[i] = Math.random() < 0.01 ? 0 : v + fontsize;//改变Y轴的值
+                })
+            }, 50);
+        }
+
+    </script>
+</body>
+
+</html>
