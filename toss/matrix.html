@@ -31,7 +31,7 @@
         ctx.fillStyle = 'green';
         ctx.font = `${fontsize}px Arial`;
 
-        const texts = 'Wake up,Neko...:The Matrix has you...:Follow the White Rabbit:Knock,Knock,Neko...';
+        const texts = 'Welcome!:Are you ready?:Follow with me!:Three:Two:one...';
         const textArray = texts.split(':');
         const charArray = Array(Math.floor(canvas.width / fontsize)).fill(0);
         
@@ -55,16 +55,22 @@
             type(textArray[0], 1);
             setTimeout(() => {
                 type(textArray[1], 1);
-            }, 3500)
+            }, 1800)
             setTimeout(() => {
                 type(textArray[2], 1);
-            }, 8000)
+            }, 4800)
             setTimeout(() => {
                 type(textArray[3], 1);
-            }, 16500)
+            }, 9000)
+			setTimeout(() => {
+			    type(textArray[4], 1);
+			}, 11200)
+			setTimeout(() => {
+			    type(textArray[5], 1);
+			}, 13000)
             setTimeout(() => {
                 digitalRain();
-            }, 25000)
+            }, 16000)
         }
 
         start();//执行代码
