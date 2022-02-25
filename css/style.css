@@ -175,7 +175,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #fff;
 }
 .bg-floor {
-  background: url("https://edu-image.nosdn.127.net/DD9FCCC517B3BA8C0CC5B0B17915E34F.png");
+  background: url("/medias/首页背景.png");
   background-size: cover;
   transition: all 0.3s;
 }
